@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label, input, textarea, select {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Name (optional):</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email (optional):</label>
+        <input type="email" id="email" name="email">
+
+        <label for="phone">Phone (optional):</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <label for="questions">Any Questions regarding product or service:</label>
+        <textarea id="questions" name="questions" required></textarea>
+
+        <label for="comments">Additional comments (optional):</label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
